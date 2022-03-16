@@ -14,4 +14,11 @@ node
      {
           sh 'mvn clean compile'
      }
+   
+   stage ('Unit Testing')
+   {
+   sh 'mvn test'
+   }
 }
+
+
